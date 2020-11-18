@@ -23,6 +23,10 @@ namespace WebApplication1
         {
             services.AddDbContext<TodoContext>(Opt =>
                                                 Opt.UseInMemoryDatabase("TodoList"));
+
+            services.AddDbContext<FireFighterContext>(Opt =>
+                                                Opt.UseInMemoryDatabase("FireFighterList"));
+
             services.AddControllers();
         }
 
